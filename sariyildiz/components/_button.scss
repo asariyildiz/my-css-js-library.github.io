@@ -1,0 +1,56 @@
+@mixin button($background-color: #ece7e7) {
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    border:0;
+    padding: $base-padding $base-padding * 2;
+    border-radius: $base-border-radius;
+    background-color: $background-color;
+}
+
+.button{
+    @include button; 
+}
+
+@each $key, $val in $colors {
+    .button-#{$key} {
+        @include button($val);
+        &:hover {
+            background-color: lighten($val, 5);
+        }
+    }
+    .button-outlined-#{$key} {
+        @include button(#fff);
+        border: $base-border-thickness solid $val;
+        &:hover {
+            background-color: $val;
+        }
+    }
+    .button-complement-#{$key} {
+        @include button($val);
+        color: light-comp($val);
+        &:hover {
+            color: $val;
+            background-color: light-comp($val);
+        }
+    }
+} 
+
+.homepage-buton {
+    text-align: center;
+}
+
+.ozel-button {
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    padding: 1rem 1.2rem;
+    border-radius: 20px;
+    background-color: var(--ozel-button-bg-color);
+    color: var(--ozel-button-text-color);
+  }
+  .ozel-button:hover {
+    color: yellow;
+    background-color: #b3d9b3;
+  }

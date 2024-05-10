@@ -1,0 +1,51 @@
+@use 'sass:math';
+
+//Temel alert bileşenleri stilleri
+
+/*.sa-alert {
+    padding: $base-padding;
+    border: $base-border-thickness;
+    border-radius: $base-border-radius;
+    margin-bottom: $base-margin;
+}
+
+//Başarı durumu için alert
+.sa-alert-success {
+    color: $thirdColor;
+    background-color: $firstColor;
+    border-color: black;
+}
+
+//Uyarı durumu için alert
+.sa-alert-warning {
+    color: $secondColor;
+    background-color: $firstColor;
+    border-color: black;
+} */
+
+
+.error-message {
+  display: none;
+  color: red;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 20%;
+  text-align: center;
+}

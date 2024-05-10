@@ -1,0 +1,32 @@
+@use 'sass:math';
+
+//Temel tooltip stilleri
+.sa-tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+//Tooltip içeriği için stiller
+.sa-tooltip .sa-tooltip-content {
+    visibility: hidden;
+    width: 120px;
+    background-color: #b3d9b3;
+    color: black;
+    text-align: center;
+    border: black solid 1px;
+    border-radius: $base-border-radius;
+    padding: $base-padding;
+    position: absolute;
+    z-index: 1;
+    top: 120%;
+    right: -150%;
+    margin-left: $base-margin;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+//Aktif tooltip stilleri
+.sa-tooltip:hover .sa-tooltip-content {
+    visibility: visible;
+    opacity: 1;
+}

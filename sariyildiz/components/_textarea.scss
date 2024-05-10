@@ -1,0 +1,19 @@
+@use 'sass:math';
+
+//Temel text area stilleri
+.sa-textarea {
+    padding: $base-padding;
+    border: $base-border-thickness;
+    border-radius: $base-border-radius;
+    font-size: $font-size-medium;
+    text-align: center;
+}
+
+//Aktif durumdaki text area stilleri
+.sa-textarea:focus {
+    border-color: $fifthColor;
+    box-shadow: $base-box-shadow;
+}
+
+
+

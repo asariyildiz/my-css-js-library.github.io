@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+    <p class="theme-light theme-dark"></p>
+    <!--navbar-->
+    <nav class="navbar">
+        <div class="container">
+            <img src="css/pictures/my-logo.png" alt="" width="15%">
+            <div>
+            <div class="sa-dropdown">
+                <button class="sa-drop-button" onclick="saFunction()">Menü
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="sa-dropdown-content" id="saDropdown">
+                    <a href="secondpage.html">CSS ve JavaScript Kütüphanesi</a>
+                    <a href="form.html">Bize katıl!</a>
+                </div>
+            </div>
+            <label id="switch" class="sa-toggleswitch sa-tooltip">
+                <input type="checkbox" onchange="toggleTheme()" id="slider">
+                <span class="sa-toggleswitch-switch round"></span>
+                <span class="sa-tooltip-content">Tema Değiştir</span>
+            </label>
+        </div>
+        </div>
+    </nav>
+    <br><br>
+
+    <!--hakkımda section-->
+    <section id="hakkimizda" class="hakkimizdaClass sa-m-bottom-5 sa-p-top-4 sa-p-bottom-5">
+        <div class="container">
+            <h2 class="sa-font-size-large sa-p-bottom-3">Sarıyıldız Tasarım</h2>
+            <p class="sa-font-size-medium">"Sarıyıldız Tasarım"ın kütüphanesi; modern, minimalist bir yaklaşımı ve soft renkleri içerir.</p>
+            <p class="sa-font-size-medium sa-p-top-3">Kütüphanede çalışılmış olan temel bileşenler; esnek on ikilik grid sistemi, navigasyon menüsü, dropdown menü, butonlar, form, kart, tooltipler, renkler, inputlar, alertler, text area, toggle switch gibi yapılar kütüphanenin temel componentlerini oluşturur. Ayrıca JavaScript tarafında dropdown menü, form validasyonu ve karanlık-aydınlık tema değiştirme butonu çalışılmıştır.</p>
+        </div>
+    </section>
+
+    <!--daha fazlası section-->
+    <div class="homepage-buton">
+        <div class="daha-fazlasi sa-m-bottom-5" text-align="center">
+            <button class="ozel-button"><b>Daha fazlası için...</b>
+            </button>
+        </div>
+    </div>
+
+    <!--footer-->
+    <footer class="sa-p-top-3 col-5-sa-extra-large">
+    <div class="container">
+        <div class="row">
+            <div class="col-5-sa-medium">
+                <!-- Sol Bölüm -->
+                copright 2024
+            </div>
+            <div class="col-4-sa-medium text-center">
+                <!-- Orta Bölüm -->
+                <img src="css/pictures/my-logo.png" alt="" width="30%">
+            </div>
+            <div class="col-3-sa-medium text-right">
+                <!-- Sağ Bölüm -->
+               aslihansariyildizz@gmail.com
+            https://github.com/asariyildiz
+            </div>
+        </div>
+    </div>
+</footer>
+    
+    <script src="js/dropdown.js"></script>
+    <script src="js/theme.js"></script>
+
+    <script> 
+        document.addEventListener("DOMContentLoaded", function() {
+        var button = document.querySelector('.homepage-buton');
+    
+        if (button) {
+            button.addEventListener('click', function() {
+                window.location.href = 'http://127.0.0.1:5500/secondpage.html';
+            });
+        }
+    });</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+    <!--navbar-->
+    <nav class="navbar">
+        <div class="container">
+            <img src="css/pictures/my-logo.png" onClick="window.location='index.html'" alt="" width="15%">
+            <div>
+            <div class="sa-dropdown">
+                <button class="sa-drop-button" onclick="saFunction()">Menü
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="sa-dropdown-content" id="saDropdown">
+                    <a href="secondpage.html">CSS ve JavaScript Kütüphanesi</a>
+                    <a href="form.html">Bize katıl!</a>
+                </div>
+            </div>
+            <label id="switch" class="sa-toggleswitch sa-tooltip">
+                <input type="checkbox" onchange="toggleTheme()" id="slider">
+                <span class="sa-toggleswitch-switch round"></span>
+                <span class="sa-tooltip-content">Tema Değiştir</span>
+            </label>
+        </div>
+        </div>
+    </nav>
+
+        <!--intro-->
+        <div class="container sa-font-size-medium">
+            <div class="row justify-center">
+                <div class="col-12-sa-ekstra-small" col-5-sa-medium>
+                    <h2>
+                        <div class="sa-font-size-medium sa-p-top-5 sa-m-bottom-2">CSS ve JavaScript Kütüphanesi Oluşturma Süreci</div>
+                    </h2>
+                    <p class="sa-font-size-small sa-m-top-2">Bir CSS kütüphanesi oluştururken tutarlılık, modülerlik ve kolay kullanılabilirlik önemlidir. Kullanıcıların ihtiyaçlarını karşılamak ve kütüphanenin genişletilebilir olmasını sağlamak için dikkatli bir planlama ve tasarım yapmak temelleri oluşturur.</p>
+                    <div>
+                        <div class="col-12-sa-ekstra-small col-5-sa-medium">
+                            <!--<img src="/img/laptop.svg" alt="">-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--çalışmalarım section-->
+    <section id="calismalarım" class="sa-m-top-5">
+        <div class="container">
+            <h2 class="sa-font-size-medium">CSS ve JavaScript Kütüphanesi Geliştirme Süreci</h2>
+            <div class="row gap-2">
+                <div class="col-12-sa-extra-small col-5-sa-medium col-3-sa-large">
+                    <div class="sa-card p-0">
+                        <h3 class="sa-card-title sa-font-size-small">Ön Hazırlıklar</h3>
+                        <img src="css/pictures/libraries-removebg-preview.png" alt="" width="50%">
+                        <p class="sa-font-size-small">Kütüphanemizin düzenli, güvenilir ve kullanıcı dostu olması temel hedefimiz. Bu nedenle detaylı bir ön hazırlık aşaması yapıldı. Gereksinimleri belirlemek, araştırma-planlama yapmak, tasarımı oluşturmak, geliştirme ortamını hazırlamak, temel kütüphaneleri seçmek, test stratejilerini belirlemek ve dokümantasyonu oluşturmak yapılan başlıca ön hazırlıklar oldu.</p>
+                    </div>
+                </div>
+                <div class="col-12-sa-ekstra-small col-5-sa-medium col-3-sa-large">
+                    <div class="sa-card p-0">
+                        <h3 class="sa-card-title sa-font-size-small">Geliştirme Süreci</h3>
+                        <img src="css/pictures/gelistirme-removebg-preview.png" alt="" width="50%">
+                        <p class="sa-font-size-small">Kütüphanenimizin geliştirme sürecine temel altyapıyı oluşturarak başladık. Proje dosyalarının oluşturulması, gerekli klasörlemenin yapılması sağlandı. Bileşenlere karar verme ve bileşenleri oluşturma sürecin en kompleks kısımlarını oluşturdu. Bileşenleri oluştururken stillere karar vermek ve bileşenleri ona göre yapılandırmak sürecin bir başka parçasıydı. İşlevselliği eklemek için JavaScript ve CSS hareketli bileşenler de oluşturuldu. JavaScript dosyalarının içine yazılan fonksiyonlarla kütüphanemiz daha hareketli oldu.</p>
+                    </div>
+                </div>
+                <div class="col-12-sa-ekstra-small col-5-sa-medium col-3-sa-large">
+                    <div class="sa-card p-0">
+                        <h3 class="sa-card-title sa-font-size-small">Kulllanılan Teknolojiler</h3>
+                        <img src="css/pictures/teknologies-removebg-preview.png" alt="" width="50%">
+                        <p class="sa-font-size-small">Projenin geliştirme ihtiyaçları göz önüne alındığında yaygın olarak kullanılan bazı teknolojilerden yararlanılmıştır. Kütüphanenin temel yapısını ve stilleri oluşturmak için HTML ve CSS; daha gelişmiş CSS yetenekleri sağlayan ve kütüphaneyi modüler hâle getiren preprocessors olan SASS; kütüphanenin etkileşimli özelliklerini ve dinamik davranışlarını sağlamak için JavaScript; projenin derlenmesi, optimize edilmesi ve dağıtılması için build araçlarından Gulp; kütüphanelerin ve bağımlılıkların yönetimi için Node.js kullanılmıştır.   </p>
+                    </div>
+                </div>
+                <div class="col-12-sa-ekstra-small col-5-sa-medium col-3-sa-large">
+                    <div class="sa-card p-0">
+                        <h3 class="sa-card-title sa-font-size-small">Hedefler</h3>
+                        <img src="css/pictures/hedefler-removebg-preview.png" alt="" width="50%">
+                        <p class="sa-font-size-small">Kütüphanemizin geliştirme süreci tamamlandı ve şimdi hedefleri konuşma vakti! İlk olarak uzmanlardan geri bildirim almak ve bu doğrultuda iyileştirmeler yapmak. Bu iyileştirmeler; dokümantasyon-güncelleme alanlarında, performans-optimizasyon süreçlerinde ve güvenlik gibi alanlarda olabilir. Kütüphanemiz için ayrıca hedeflerimizden biri de pazarlamasını, tanıtımını ve yaygınlaştırılmasını sağlamak. Böylece yeterli topluluğu sağlayarak kütüphanemizi daha fazla geliştime olanağımızı da yaratmış oluruz.  </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-center sa-font-size-medium">
+            </div>
+        </div>
+        
+    </section>
+
+    <!--footer-->
+    <footer class="sa-p-top-3 col-5-sa-extra-large">
+        <div class="container">
+            <div class="row">
+                <div class="col-5-sa-medium">
+                    <!-- Sol Bölüm -->
+                    copright 2024
+                </div>
+                <div class="col-4-sa-medium text-center">
+                    <!-- Orta Bölüm -->
+                    <img src="css/pictures/my-logo.png" alt="" width="30%">
+                </div>
+                <div class="col-3-sa-medium text-right">
+                    <!-- Sağ Bölüm -->
+                   aslihansariyildizz@gmail.com
+                https://github.com/asariyildiz
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="js/dropdown.js"></script>
+    <script src="js/theme.js"></script>
+</body>
+</html>

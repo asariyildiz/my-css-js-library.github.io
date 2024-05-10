@@ -1,0 +1,24 @@
+@use 'sass:math';
+
+//genel input stilleri
+
+.sa-input {
+    border: 1px solid black;
+    padding: $base-padding;
+    font-size: $base-font-size;
+    background-color: #ffffb3;
+    border-radius: $base-border-radius;
+
+    .sa-input-body {
+        font-size: $font-size-medium;
+        padding-bottom: $base-padding;
+        font-weight: bold;
+    }
+
+    .sa-input:focus {
+        border-color: $thirdColor;
+    }
+    .sa-input.error {
+        border-color: $secondColor;
+    }
+}

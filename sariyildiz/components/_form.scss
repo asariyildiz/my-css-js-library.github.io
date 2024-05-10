@@ -1,0 +1,39 @@
+@use 'sass:math';
+
+//Temel form stilleri
+.sa-form {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    width: 100%;
+    align-items: center;
+}
+
+//Form elemanları için stiller
+.sa-form-item {
+    margin-bottom: $base-margin;
+}
+
+//Form - input alanları için stiller
+.sa-form-input {
+    padding: $base-padding;
+    border: $fifthColor solid 2px;
+    border-radius: $base-border-radius;
+    font-size: $font-size-small;
+    
+}
+
+//Form-buton stilleri
+.sa-form-button {
+    padding: $base-padding;
+    background-color: white;
+    color: black;
+    border: $fifthColor solid 1px;
+    border-radius: $base-border-radius;
+    font-size: $base-border-radius;
+    cursor: pointer;
+}
+
+.sa-form-button:hover {
+    background-color: $fifthColor;
+}

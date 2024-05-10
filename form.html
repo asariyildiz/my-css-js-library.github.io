@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+     <!--navbar-->
+    <nav class="navbar">
+      <div class="container">
+          <img src="css/pictures/my-logo.png" onClick="window.location='index.html'" alt="" width="15%">
+          <div>
+          <div class="sa-dropdown">
+              <button class="sa-drop-button" onclick="saFunction()">Menü
+                  <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="sa-dropdown-content" id="saDropdown">
+                  <a href="secondpage.html">CSS ve JavaScript Kütüphanesi</a>
+                  <a href="form.html">Bize katıl!</a>
+              </div>
+          </div>
+          <label id="switch" class="sa-toggleswitch sa-tooltip">
+              <input type="checkbox" onchange="toggleTheme()" id="slider">
+              <span class="sa-toggleswitch-switch round"></span>
+              <span class="sa-tooltip-content">Tema Değiştir</span>
+          </label>
+      </div>
+      </div>
+  </nav>
+  <br><br>
+
+   <!--form-->
+  <div class="sa-form">
+  <h2>Kullanıcı Kayıt Formu</h2>
+<p><span class="error-message" id="username-error">Kullanıcı adı boş olamaz.</span></p>
+<form action="#" method="post" onsubmit="return validateForm()">
+    <p>Kullanıcı Adı: </p> <input class="sa-input" type="text" name="username" id="username"><br><br>
+    <p>E-posta: </p> <input class="sa-input" type="email" name="email" id="email"><br><br>
+    <p>Parola: </p> <input class="sa-input" type="password" name="password" id="password"><br><br>
+    <input class="sa-input" type="submit" value="Gönder">
+</form>
+
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <p id="modal-text"></p>
+    </div>
+</div>
+</div>
+<br>
+<!--textarea-->
+
+<div class="sa-textarea">
+  <h2>Bize İletebilirsiniz!</h2>
+  <textarea id="saTextarea" placeholder="Görüş ve düşüncelerinii önemsiyoruz." rows="4" cols="50">
+  </textarea>
+  <br>
+  <button class="ozel-button" onclick="alertTextarea()">Metni Göster</button>
+</div>
+
+      <!--footer-->
+    <footer class="sa-m-top-4 sa-p-top-2 col-5-sa-extra-large">
+      <div class="container">
+          <div class="row">
+              <div class="col-5-sa-medium">
+                  <!-- Sol Bölüm -->
+                  copright 2024
+              </div>
+              <div class="col-4-sa-medium text-center">
+                  <!-- Orta Bölüm -->
+                  <img src="css/pictures/my-logo.png" alt="" width="30%">
+              </div>
+              <div class="col-3-sa-medium text-right">
+                  <!-- Sağ Bölüm -->
+                 aslihansariyildizz@gmail.com
+              https://github.com/asariyildiz
+              </div>
+          </div>
+      </div>
+  </footer>
+
+      <script src="js/theme.js"></script>
+      <script src="js/form.js"></script>
+      <script>
+        function alertTextarea() {
+            var text = document.getElementById("saTextarea").value;
+            alert("Yazılan metin: " + text);
+        }
+        </script>
+
+
+</body>
+</html>

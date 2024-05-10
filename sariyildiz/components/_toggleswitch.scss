@@ -1,0 +1,61 @@
+@use 'sass:math';
+
+//Temel toggleswitch stilleri
+.sa-toggleswitch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+}
+
+.sa-toggleswitch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+//Toggleswitch çubuğu
+.sa-toggleswitch-switch {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #ccc;
+    border-radius: $base-border-radius;
+    transition: background-color 0.3s;
+}
+
+// Toggle switch çubuğunun iç kısmı için stiller (açık durum)
+.sa-toggleswitch-switch:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    border-radius: $base-border-radius;
+    transition: transform 0.3s;
+  }
+
+  // Açık durumda toggle switch için stil
+input:checked + .sa-toggleswitch-switch {
+    background-color: #161616;
+  }
+  
+  // Açık durumda toggle switch çubuğunun iç kısmı için stil
+  input:checked + .sa-toggleswitch-switch::before {
+    transform: translateX(26px);
+    background: white;
+  }
+  
+  .sa-toggleswitch-switch.round {
+    border-radius: 34px;
+  }
+  
+  .sa-toggleswitch-switch.round:before {
+    border-radius: 50%;
+  }
+

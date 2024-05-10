@@ -1,0 +1,63 @@
+@each $key, $val in $colors {
+    .text-#{$key} {
+        color: $val
+    }
+    .background-#{$key} {
+        background-color: $val;
+    }
+
+    @if($val !=black and $val !=white) {
+
+//light variations
+
+@for $i from 1 through 9 {
+    .text-#{$key}-light-#{$i} {
+        color: mix(white, $val, $i * 10);
+    }
+    .text-hover-#{$key}-light-#{$i} {
+        &:hover {
+            color: mix(white, $val, $i * 10);
+        }
+    }
+    .background-#{$key}-light-#{$i} {
+        background-color: mix(white, $val, $i * 10);
+    }
+}
+
+//dark variations
+
+@for $i from 1 through 9 {
+    .text-#{$key}-dark-#{$i} {
+        color: mix(black, $val, $i * 10);
+    }
+    .text-hover-#{$key}-dark-#{$i} {
+        &:hover {
+            color: mix(black, $val, $i * 10);
+        }
+    }
+    .background-#{$key}-dark-#{$i} {
+        background-color: mix(black, $val, $i * 10);
+    }
+}
+}
+}
+
+.theme-light {
+    --navbar-color: #ffffb3;
+    --text-eighthColor: #1a1a00;
+    --bg-color: white;
+    --hakkimizda-color : #b3d9b3;
+    --card-color : white;
+    --ozel-button-bg-color : #ffffb3;
+    --ozel-button-text-color : black;
+  }
+  .theme-dark {
+    --navbar-color: #a2a282;
+    --text-eighthColor: black;
+    --bg-color: black;
+    --hakkimizda-color : black;
+    --card-color : grey;
+    color:#ffffb3;
+    --ozel-button-bg-color : #a2a282;
+    --ozel-button-text-color : #ffffb3;
+  }

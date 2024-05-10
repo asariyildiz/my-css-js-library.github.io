@@ -1,0 +1,55 @@
+@use 'sass:math';
+
+// Temel dropdown stilleri
+.sa-dropdown {
+    padding-right: 0;
+    position: relative;
+    display: inline-block;
+    color: var(--text-eighthColor);
+    margin-right: 20px;
+  }
+  
+  // Dropdown içeriği için stiller
+  .sa-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #b3d9b3;
+    min-width: 160px;
+    box-shadow: $base-box-shadow rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 100%;
+    right: 40%;
+  }
+
+  // Dropdown elemanları için stiller
+.sa-dropdown-content a {
+    float: none;
+    color: black;
+    padding: $base-padding;
+    text-decoration: none;
+    display: block;
+  }
+  
+  // Dropdown elemanları hover durumu için stiller
+  .sa-dropdown-content a:hover {
+    background-color: #ffffb3;
+  }
+  
+  // Aktif durumdaki dropdown için stil
+  .sa-dropdown:hover .sa-dropdown-content {
+    display: block;
+  }
+
+  .sa-dropdown .sa-drop-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: inherit;
+    font-family: inherit;
+    font-size: 16px;
+    margin: 0;
+  }
+
+  .show {
+    display: block;
+  }
